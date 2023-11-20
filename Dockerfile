@@ -20,7 +20,6 @@ RUN npm run build
 
 
 # Step 2: Serve the application using Nginx
-
 # Use an Nginx image to serve the built app
 FROM nginx:alpine
 
