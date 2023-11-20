@@ -2,6 +2,8 @@ import { React, useState } from 'react';
 import { Container, Nav, Navbar, Row, Col } from 'react-bootstrap';
 import './Footer.css';
 
+import { Link } from 'react-router-dom';
+
 import Social_Icon from '../../Sub_Components/Social_Icon/Social_Icon';
 import ytlogowhitesvg from '../../Images/Social_Icons/ytlogowhitesvg.svg';
 import disclogowhitesvg from '../../Images/Social_Icons/disclogowhitesvg.svg';
