@@ -4,7 +4,7 @@
 FROM node:16 AS build
 
 # Set the working directory in the Docker container
-WORKDIR /app
+WORKDIR /theatr
 
 # Copy package.json and package-lock.json (if available)
 COPY package*.json ./
@@ -24,8 +24,10 @@ RUN npm run build
 # Use an Nginx image to serve the built app
 FROM nginx:alpine
 
+from nginx/nginx.conf /etc/nginx/nginx.conf
+
 # Copy the built app from the previous stage
-COPY --from=build /app/build /usr/share/nginx/html
+COPY --from=build /theatr/build /usr/share/nginx/html
 
 # Copy nginx configuration (if you have a custom one)
 # COPY nginx.conf /etc/nginx/conf.d/default.conf
