@@ -15,6 +15,7 @@ import tradingviewlogowhitesvg from '../../Images/Social_Icons/tradingviewlogowh
 
 import Logo from '../../Images/logo.svg';
 
+
 import './Topnav.css';
 
 function Topnav() {
