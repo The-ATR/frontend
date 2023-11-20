@@ -1,0 +1,13 @@
+.matrix-canvas {
+    position: relative;
+    overflow: hidden;
+    z-index: 1; /* add this */
+    padding: 0px 0px;
+  }
+  
+  .matrix-canvas canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }

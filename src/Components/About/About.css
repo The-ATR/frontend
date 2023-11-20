@@ -1,0 +1,168 @@
+.about-container {
+    border: 2px solid #ffffff00;
+    padding: 0px 0px;
+    
+  }
+  
+  .about-headers
+  {
+    font-size: 1.4em;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: #008eb5;
+  }
+
+  .about-headers2
+  {
+    font-size: 1.4em;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: #9e0396;
+  }
+  
+  .about-inner-container {
+    display: flex;
+    align-items: center;
+    padding: 2.5em;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #191919;
+  }
+  
+  .about-row {
+    display: flex;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .about-column-1 {
+    min-width: 40%;
+  }
+
+  .about-button-div{
+    min-width: 100%;
+    min-height: 60px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-button-link{
+    min-width: 60%;
+    min-height: 50px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+  .about-button {
+    
+    min-width: 100%;
+    min-height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    background: linear-gradient(60deg, #9e0396, #70026a, #5b029b, #7e42f5, #117f9b, #008eb5);
+    animation: animatedgradient 2s ease alternate infinite;
+    background-size: 300% 300%;
+    margin-top: auto;
+  }
+
+  .about-description {
+    min-height: 100%;
+    min-width: 100%;
+    padding: 2.5em 2.5em;
+    background-color: #333;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .about-description2 {
+    min-height: 100%;
+    min-width: 100%;
+    background-color: #333;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  /* Add hover effect for the card */
+  .about-description:hover {
+    transform: scale(1.15); /* Increase size on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow on hover */
+  }
+  /* Add hover effect for the card */
+  .about-description2:hover {
+    transform: scale(1.05); /* Increase size on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow on hover */
+  }
+  
+  .about-column-2 {
+    min-width: 60%;
+    display: flex;
+  }
+  
+  
+
+  .about-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  
+  .video-container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .video-container iframe {
+    width: 100%;
+    height: 80%;
+  }
+
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 1024px) {
+    .about-inner-container, .about-row {
+      flex-direction: column; /* Stack children vertically */
+    }
+  
+    .about-column-1, .about-column-2 {
+      min-width: 100%; /* Each column takes full width */
+      max-width: 100%; /* Prevents columns from exceeding the container's width */
+    }
+  
+    .about-description, .about-description2 {
+      padding: 1em; /* Adjust padding for smaller screens */
+    }
+
+    .about-image {
+        height: auto; /* Ensure height is set to auto or a fixed value */
+        min-height: 200px; /* Adjust as needed */
+    }
+  }
+
+  
+  

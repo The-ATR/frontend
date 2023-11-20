@@ -1,0 +1,136 @@
+.navbar {
+    background-color: rgb(0, 0, 0);
+    max-height: 200px;
+    min-width:100%;
+    }
+    
+    
+    .navbar-dark .navbar-nav .nav-link {
+    color: white;
+    }
+    
+    
+    
+    .navbar-dark .navbar-nav .nav-link:hover {
+    color: #9e0396;
+    }
+    
+    .navbar-nav .nav-link {
+    margin-right: 10px;
+    }
+    .navbar-nav .dropdown-menu {
+    background-color: #333;
+    }
+    
+    .navbar-nav .dropdown-menu .dropdown-item {
+    color: #fff !important;
+    }
+    
+    .navbar-nav .dropdown-menu .dropdown-item {
+        background-color: #1b1b1b;
+    }
+        
+    
+    .navbar-nav .dropdown-menu .dropdown-item:hover {
+    color: #9e0396 !important;
+    }
+    
+    
+    .dropdown-item.active, .dropdown-item:active {
+        background-color: #f542ec7c !important;
+    }
+    
+    .dropdown-item.active, .dropdown-item:active > a {
+        color: #333 !important;
+    }
+      
+
+    .nav-btn-link{
+        text-decoration: none;
+    }
+    
+    .nav-social-div-container{
+        display: flex; /* This is the equivalent of 'd-flex' in Bootstrap */
+        align-items: center; /* This is the equivalent of 'align-items-center' in Bootstrap */
+        margin-right: 10px;
+        
+    }
+
+    .nav-social-div{
+        margin: 5px;
+        margin-bottom: 5px;
+    }
+    .nav-login{
+        vertical-align: middle;
+        margin-left: 15px;
+        padding-top: 5px;
+    }
+
+
+    /* Media Query for Mobile Screens */
+@media screen and (max-width: 1023px) {
+
+    
+    .navbar {
+        position: sticky; /* Keeps the navbar in the normal document flow */
+        z-index: 1020; /* Ensures navbar is above the expanded content */
+        min-width: auto;
+    }
+
+    .navbar-collapse {
+        position: fixed; /* Fixed position to cover the screen */
+        max-width:auto;
+        top: 200px; /* Start below the navbar */
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgb(0, 0, 0); /* Black background for expanded area */
+        overflow-y: auto; /* Allow scrolling for long content */
+        z-index: 1010; /* Below the navbar, but above the rest of the content */
+        display: flex; /* Use flexbox to align children */
+        flex-direction: column; /* Stack children vertically */
+        align-items: center; /* Center children horizontally */
+        justify-content: flex-start; /* Center children vertically if there's space */
+        text-align: center;
+        transform: translateY(-300%); /* Initially off-screen */
+        transition: transform 0.5s ease; /* Smooth slide-down transition */
+    }
+    
+    .navbar-collapse.collapsing {
+        transform: translateY(-300%); /* Collapsing state */
+        transition: transform 0.5s ease;
+    }
+    
+    
+    .navbar-collapse.show {
+        transform: translateY(0); /* Slide down into view */
+        display: flex; /* Changed from block to flex to use flexbox properties */
+        overflow-y: auto; /* Enable scrolling within the navbar */
+        min-width: auto;
+    }
+
+    /* If you have specific classes for nav links, you may want to ensure they are also centered */
+    .navbar-nav {
+        align-items:center; /* Center the nav links */
+        width: 100%; /* Take full width of the collapse container */
+    }
+
+    .navbar-nav .nav-link {
+        margin-top: 10px; /* Top margin for each link */
+        margin-bottom: 10px; /* Bottom margin for each link */
+    }
+
+    .nav-social-div-container{
+        display: flex; /* This is the equivalent of 'd-flex' in Bootstrap */
+        align-items: center; /* This is the equivalent of 'align-items-center' in Bootstrap */
+        margin-right: 0px;
+        margin-bottom: 0px;
+        min-width: fit-content;
+    }
+
+    .nav-login{
+        vertical-align: middle;
+        margin-left: 0px;
+        min-width: fit-content;
+    }
+}

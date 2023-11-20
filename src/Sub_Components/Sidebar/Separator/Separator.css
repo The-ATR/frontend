@@ -1,0 +1,7 @@
+.sidenav-separator {
+    border: 3px;
+    height: 3px;
+    background-image: linear-gradient(to right, #f542ec, #9e0396, #008eb5, #0bcaff);
+    margin: 10px 10px; /* Adjust spacing as needed */
+  }
+  

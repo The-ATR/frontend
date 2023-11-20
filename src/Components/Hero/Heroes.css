@@ -1,0 +1,50 @@
+.hero-background {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh; /* Adjust height as needed */
+  }
+  
+  .hero-container {
+    position: relative;
+    height: 100%; /* Full height of parent */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    -webkit-text-stroke: 2px white; /* Adjust the width and color as needed */
+    color: transparent;
+    font-size: 6vw; /* Adjust based on your design */
+    font-weight: bold; /* Adjust as per your design */
+  }
+  
+  .hero-text-0 {
+    top: 0%;
+  }
+  
+  .hero-text-1 {
+    top: 20%;
+  }
+  
+  .hero-text-2 {
+    top: 40%;
+  }
+  
+  .hero-text-3 {
+    top: 60%;
+  }
+  
+  @media (max-width: 768px) {
+    .hero-text {
+      font-size: 10vw; /* Larger font size for smaller screens */
+      -webkit-text-stroke: 3px white; /* Thicker stroke for smaller screens */
+    }
+  }
+  
+  

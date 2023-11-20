@@ -1,0 +1,30 @@
+/* Animated_Container.css */
+.animated-container {
+  position: relative;
+  border-radius: 10px; /* Or to match your design */
+  overflow: hidden; /* This will keep the pseudo-element inside the container's bounds */
+  padding: 5px;
+  /* Ensures the children are on top of the pseudo-element */
+  z-index: 1;
+}
+
+.animated-container::before {
+  content: '';
+  position: absolute;
+  top: -3px; left: -3px;
+  right: -3px; bottom: -3px;
+  z-index: -1;
+  border-radius: inherit; /* Maintains the border-radius of the container */
+  background: linear-gradient(60deg, #9e0396, #70026a, #5b029b, #7e42f5, #117f9b, #008eb5);
+  background-size: 300% 300%;
+  animation: animatedgradient 3s ease-in-out infinite;
+}
+
+@keyframes animatedgradient {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}

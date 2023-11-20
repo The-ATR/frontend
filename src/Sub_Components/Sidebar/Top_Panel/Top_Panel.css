@@ -1,0 +1,30 @@
+.docs-sidenav-top-panel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
+    color: white;
+  }
+  
+  .docs-sidenav-top-panel img {
+    border-radius: 50%;
+    width: 75; /* Adjust size as needed */
+    height: 75px; /* Adjust size as needed */
+    margin-bottom: 10px;
+  }
+  
+  .docs-sidenav-top-panel-sub {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    margin-right: 50px;
+  }
+
+  .docs-sidenav-top-panel-sub .desc {
+    font-size: 0.75em;
+  }
+  
+  .docs-sidenav-top-panel-sub .main {
+    font-size: 1.05em;
+    font-weight: bold;
+  }

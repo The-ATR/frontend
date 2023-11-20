@@ -1,0 +1,11 @@
+.animbtn-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+.animbtn-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }

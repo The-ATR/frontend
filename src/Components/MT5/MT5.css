@@ -1,0 +1,43 @@
+.mt5-sub-cont{
+    padding: 20px;
+}
+
+.mt5-cont{
+    margin: 100px 0px;
+    border: 2px solid #333;
+    border-radius: 10px;
+}
+
+.mt5-button-div{
+    min-width: 100%;
+    min-height: 60px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mt5-button-link{
+    min-width: 60%;
+    min-height: 50px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+
+  .mt5-button {
+    min-width: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    background: linear-gradient(60deg, #9e0396, #70026a, #5b029b, #7e42f5, #117f9b, #008eb5);
+    animation: animatedgradient 2s ease alternate infinite;
+    background-size: 300% 300%;
+    margin-top: auto;
+  }

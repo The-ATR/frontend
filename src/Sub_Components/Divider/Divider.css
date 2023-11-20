@@ -1,0 +1,49 @@
+.divider-intro-container{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+  
+    align-items: center;
+    align-content: center;
+    object-fit: fill;
+    
+  }
+  
+  .divider{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .divider-col{
+  
+    width: 50%;
+    height: 10px;
+    
+    background: #008eb5;
+    background: linear-gradient(
+      90deg,
+      #9e0396 29%,
+      #008eb5 94%
+    );
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 50px;
+  }
+  
+  .divider-header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-size: 100px;
+    color: #008eb5;
+  }
+  

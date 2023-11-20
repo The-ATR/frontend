@@ -1,0 +1,29 @@
+/* Neon_Container.css */
+.neon-container {
+    position: relative;
+    border-radius: 10px; /* Or to match your design */
+    box-shadow: 
+      0 0 5px var(--color3),
+      0 0 15px var(--color3),
+      0 0 30px var(--color3),
+      0 0 60px var(--color3);
+    animation: neonAnimation 1s ease-in-out infinite alternate;
+    /* Other styles to match your design */
+  }
+  
+  @keyframes neonAnimation {
+    from {
+      box-shadow: 
+        0 0 5px var(--color2),
+        0 0 15px var(--color2),
+        0 0 30px var(--color2),
+        0 0 60px var(--color2);
+    }
+    to {
+      box-shadow: 
+        0 0 10px var(--color1),
+        0 0 20px var(--color1),
+        0 0 40px var(--color1),
+        0 0 80px var(--color1);
+    }
+  }

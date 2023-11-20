@@ -1,0 +1,159 @@
+
+
+/* Library_Carousel.css */
+.lib-c-header {
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .lib-c-span-fs{
+    font-size: 0.7em;
+  }
+
+  .lib-c-header h2 {
+    font-size: 3.0rem;
+    color: #9e0396;
+    margin-bottom: 20px;
+  }
+  
+  .lib-c-header p {
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+  }
+
+
+  .lib-c-carousel-item {
+    padding: 15px;
+    text-align: center;
+    align-items: center;
+    transition: transform 0.5s ease; /* Adjust timing to make it smoother */
+  }
+  
+  .lib-c-card {
+    max-width: 65%; /* Set card width to 100% of the carousel item */
+    max-height: auto;
+    margin: auto; /* This will center the card horizontally */
+    background-color: #333;
+    color: #ffffff;
+    border: 2px solid #333;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .lib-c-card-img {
+    height: 350px; /* Set a fixed height for the image */
+    object-fit: cover; /* This will cover the area without stretching the image */
+    border-radius: 10px;
+  }
+  
+  .lib-c-card-body {
+    min-height: auto; /* Set a fixed height for the card body */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* This will distribute space around items inside the card body */
+    border-radius: 20px;
+  }
+  
+  .lib-c-card-title, .lib-c-card-text {
+    font-size: 1.25em;
+    margin: 5px 0;
+    color: #fff; /* Set text color to white (or another color of your choice) */
+  }
+  
+  .lib-c-button-div{
+    min-width: 100%;
+    min-height: 60px;
+    margin: 15px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .lib-c-button-link{
+    min-width: 60%;
+    min-height: 50px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+  .lib-c-button {
+    
+    min-width: 100%;
+    min-height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    background: linear-gradient(60deg, #9e0396, #70026a, #5b029b, #7e42f5, #117f9b, #008eb5);
+    animation: animatedgradient 2s ease alternate infinite;
+    background-size: 300% 300%;
+    margin-top: auto;
+  }
+  
+  .lib-c-carousel {
+    width: 100%;
+    max-width: 100%;
+    align-items: center;
+  }
+
+
+/* Increase the size of the arrows */
+.lib-c-carousel .carousel-control-prev-icon,
+.lib-c-carousel .carousel-control-next-icon {
+  transform: scale(2); /* Scale up the arrows to make them bigger */
+}
+
+/* Change the color of the arrows on hover */
+.lib-c-carousel .carousel-control-prev-icon:hover,
+.lib-c-carousel .carousel-control-next-icon:hover {
+  color: #9e0396; /* The color you want the arrows to change to on hover */
+}
+
+/* Ensure the overflow is hidden to maintain the card's shape */
+.lib-c-card-img-container {
+    overflow: hidden;
+    /* if the .lib-c-card-img is not wrapped with a container div, apply this style directly to .lib-c-card-img */
+  }
+  
+ /* Responsive styles */
+@media (max-width: 1024px) {
+  .lib-c-card {
+    min-width: 95%; /* Increase the card width on medium screens */
+    min-height: auto;
+  }
+  .lib-c-card-img {
+    height: auto; /* Adjust the image height on medium screens */
+  }
+  .lib-c-card-body {
+    height: auto; /* Make card body height automatic to accommodate content */
+  }
+}
+
+
+/* Arrow styles */
+.lib-c-carousel .carousel-control-prev,
+.lib-c-carousel .carousel-control-next {
+  width: 5%; /* Adjust the clickable area for the arrows */
+}
+
+/* Button styles */
+.lib-c-btn-primary {
+  padding: 10px; /* Adjust the button padding */
+  font-size: 1em; /* Adjust the button font size for smaller screens */
+}
+
+/* Ensure that the carousel indicators are visible and positioned correctly */
+.lib-c-carousel .carousel-indicators {
+  bottom: -50px; /* Adjust the position of the indicators if needed */
+}
+
+.lib-c-carousel .carousel-indicators li {
+  background-color: #9e0396; /* Change the color to match your theme */
+}

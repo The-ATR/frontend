@@ -1,0 +1,89 @@
+.community-detach{
+margin-top: 200px;
+
+}
+
+.community {
+    background-color: #00000000;
+    padding: 100px 50px;
+    position: relative;
+    border: 4px solid #9e0396;
+}
+  
+
+.community-sub-cont{
+
+    padding: 50px;
+    border: 2px solid #9e0396;
+    background-color: black;
+    min-height: 100%;
+}
+
+.community h2 {
+font-size: 3rem;
+margin-bottom: 20px;
+}
+
+.community h3 {
+font-size: 2rem;
+margin-bottom: 10px;
+}
+
+.community p {
+font-size: 1.2rem;
+line-height: 1.5;
+margin-bottom: 20px;
+}
+
+.community ul {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.community li {
+margin-bottom: 10px;
+}
+
+
+.box2 {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100px;
+height: 100px;
+border: 1px solid #9e0396;
+margin: 0 10px;
+transition: all 0.3s ease-in-out;
+cursor: pointer;
+}
+
+.box2:hover {
+border-color: #0bcaff;
+border-width: 4px;
+}
+
+.box2-link {
+text-decoration: none;
+}
+/* CSS for social icon boxes */
+.social-icon2 {
+width: 75px;
+height: 75px;
+background-color: #333;
+}
+
+.community-social-div-container{
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    flex-wrap: wrap; /* Allow items to wrap as needed */
+    gap: 10px; /* Space between items */
+    margin: auto; /* Center the container */
+    width: 100%; /* Take the full width to allow centering */
+}
+
+.community-social-div{
+    margin: 5px;
+    margin-bottom: 5px;
+}

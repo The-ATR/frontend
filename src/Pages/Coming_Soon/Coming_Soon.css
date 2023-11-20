@@ -1,0 +1,31 @@
+.coming-cut-pad{
+    padding: 0 !important;
+
+  }
+.coming-page {
+
+    min-width: 100vw;
+    min-height: 100vh;
+
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0 !important;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.coming-sub-cont{
+
+    padding: 50px;
+    border: 4px solid #9e0396;
+    border-radius: 10px;
+    background-color: black;
+    min-height: 40%;
+    min-width: 80%;
+    text-align: center;
+}

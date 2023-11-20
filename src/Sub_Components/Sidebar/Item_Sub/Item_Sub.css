@@ -1,0 +1,62 @@
+/* Styles for the main item container */
+.sidenav-item {
+  display: flex;
+  flex-direction: column; /* This should be column to stack children vertically */
+  width: 100%; /* Ensure it spans the full width of the sidebar */
+}
+
+/* Styles for the clickable part of the main item */
+.sidenav-item-main {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px 20px;
+  color: white;
+}
+
+/* Styles for the main item icon */
+.sidenav-item-icon {
+  margin-right: 10px; /* Adjust spacing as needed */
+}
+
+/* Styles for the main item title */
+.sidenav-item-title {
+  font-size: 1em;
+}
+
+/* Styles for the container of the sub-items */
+.sidenav-item-sub {
+  display: none; /* Initially hide the sub-menu */
+  flex-direction: column; /* Stack sub-items vertically */
+  padding-left: 20px; /* Indent sub-items */
+  background: #222; /* Dark background for sub-items */
+  width: 100%; /* Ensure it spans the full width of the sidebar */
+}
+
+
+
+/* Display the sub-menu when the main item is clicked (isOpen is true) */
+.sidenav-item.open .sidenav-item-sub {
+  display: flex; /* Show sub-menu */
+}
+
+/* Styles for each sub-item */
+.sidenav-item-sub-item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 5px 0; /* Vertical padding for each sub-item */
+  text-decoration: none; /* Removes underline from links */
+  color: white; /* Sets the default text color, change as needed */
+}
+
+
+.sidenav-item-sub-item:hover {
+  color: #9e0396; /* Color on hover */
+}
+
+/* Styles for the sub-item icon */
+.sidenav-item-sub-icon {
+  margin-right: 10px; /* Adjust spacing as needed */
+  /* No need for 'margin-left: auto;' as the icon should be left-aligned */
+}

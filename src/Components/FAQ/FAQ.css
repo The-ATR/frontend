@@ -1,0 +1,53 @@
+.faq-icon,
+.faq-icon-active {
+float: right;
+font-size: 1.5rem;
+margin-left: 1rem;
+}
+
+.faq-icon-active {
+color: #9e0396;
+}
+
+.faq-card-wrapper {
+margin: 10px 0;
+background-color: black;
+}
+
+.faq-card-wrapper.active {
+margin-bottom: 10px;
+}
+
+/* Add margin to FAQ boxes */
+
+.faq-card {
+margin: 10px 0;
+font-size: 1.5rem;
+}
+
+#faq-card{
+    background-color: black !important; 
+    color: white !important;
+    border-color: #333 !important;
+}
+
+.faq-card.active .card-header {
+color: #9e0396;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+
+.faq-card > .card-header {
+transition: color 0.3s ease;
+}
+
+.faq-card > .card-body {
+font-size: 1.0rem;
+}
+
+/* Change hover effect to thicker borders */
+.faq-card:hover {
+border-color: #9e0396;
+
+}

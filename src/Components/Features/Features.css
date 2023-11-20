@@ -1,0 +1,138 @@
+
+
+.features-container {
+    border-radius: 10px; /* Or to match your design */
+    min-height: 100%;
+    min-width: 100%;
+    background-color: #000000;
+    display: flex;
+    justify-content: center; /* Horizontally center the inner container */
+    align-items: center; /* Vertically center the inner container */
+  }
+  
+  .features-inner-container {
+    padding: 15px;
+    border-radius: 10px; /* Or to match your design */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center the cards */
+    align-items: center; /* Horizontally center the cards */
+    min-height: 100%;
+    min-width: 100%;
+    background: black;
+  }
+  
+  .features-inner-container .row {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-width: 100%;
+    min-height: auto;
+  }
+
+  .features-inner-container .col {
+    min-height: 100%;
+    min-width: 50%;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  
+  .features-inner-container .card {
+    
+    min-height: 100%;
+    min-width: 100%;
+    
+  }
+
+  .features-inner-container .card {
+    background-color: #333;
+    color: #ffffff;
+  }
+
+  
+  .features-inner-container .card-img-top {
+    max-height: 100px;
+    max-width: 100px;
+    object-fit: contain;
+  }
+
+  .features-inner-container .card-body {
+    /* Horizontally center the elements */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .features-inner-container .card-header {
+    /* Horizontally center the elements */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .features-inner-container .card-img-top {
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* Add a custom class to the card container for additional styling */
+.features-inner-container .custom-card {
+  background-color: #333;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Add hover effect for the card */
+.features-inner-container .custom-card:hover {
+  transform: scale(1.05); /* Increase size on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow on hover */
+}
+
+/* Style the card title and description */
+.features-inner-container .custom-card .card-title {
+  text-align: center;
+}
+
+.features-inner-container .custom-card .card-text {
+  text-align: center;
+}
+
+
+
+/* Center card content vertically and horizontally */
+.features-inner-container .custom-card .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+  
+  .txt-centered{
+    text-align: center;
+  }
+
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 1024px) {
+  .features-inner-container {
+    /* Ensure that the container can grow in height based on its content */
+    height: auto;
+  }
+
+  .features-inner-container .row {
+    /* Stack children vertically */
+    flex-direction: column; 
+    margin: 0;
+  }
+
+  .features-inner-container .col {
+    /* Ensure full width is taken and reset min-height */
+    min-width: 100%;
+    margin-bottom: 20px; /* Add some spacing between stacked cards */
+  }
+
+}
+
+

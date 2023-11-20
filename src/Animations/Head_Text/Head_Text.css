@@ -1,0 +1,62 @@
+.headtext{
+
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  text-align: center;
+  max-width: 100%;
+  line-height: 1;
+  text-transform: uppercase;
+  -webkit-text-stroke: 2px white;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  opacity: 1;
+  transition: all 300ms linear;
+}
+
+.headtext-header{
+
+  background: transparent;
+  border-color:white;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.headtext-header:hover{
+
+  -webkit-text-fill-color: var(--txt-col);
+  color: var(--white);
+  background-clip: text;
+  transform: scale(1.1); /* Increase size on hover */
+}
+
+.headtext p::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  font-size: 100px;
+  line-height: 1;
+  overflow: hidden;
+  text-transform: uppercase;
+  padding: 0;
+  max-height: 0;
+  -webkit-text-stroke: transparent;
+  -webkit-text-fill-color: linear-gradient(to right #9e0396 50%, #008eb5 50%);
+  color: var(--white);
+  content: attr(data-hover);
+  transition: max-height 0.4s;
+}
+
+.headtext p::before,
+.headtext p:focus::before {
+  max-height: 100%;
+}
+
+.headtext p:focus,
+.headtext p:active {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}

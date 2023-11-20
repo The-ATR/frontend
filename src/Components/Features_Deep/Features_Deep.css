@@ -1,0 +1,180 @@
+    .tab-pane {
+        display: none;
+    }
+    
+    .tab-pane.active {
+        display: block;
+    }
+    .deep-features-tab-btn {
+      background-color: #000;
+      color: #ccc;
+      border: 1px solid transparent;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      margin-top: 10px;
+      margin-bottom: 15px;
+      transition: transform 0.2s ease-in-out;
+      
+    }
+    .deep-features-tab-item {
+      transition: transform 0.2s ease-in-out;
+      
+    }
+    /* Add hover effect for the card */
+    .deep-features-tab-item:hover {
+      transform: scale(1.05); /* Increase size on hover */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow on hover */
+    }
+  
+    .deep-features-tab-btn span {
+      color: #ffffff;
+      text-align: center;
+    }
+    
+    
+    .deep-features-tab-btn:hover {
+      background-color: transparent;
+      color: #fff;
+      border-color: transparent;
+    }
+    
+    .deep-features-tab-btn.active, 
+    .deep-features-tab-btn:active, 
+    .deep-features-tab-btn:focus {
+      background-color: transparent !important;
+      color: #fff !important;
+      border-color: transparent !important;
+    }
+    
+  
+    .deep-features {
+      padding: 0 0;
+    }
+    
+    .deep-features h2 {
+      margin-top: 0;
+    }
+    
+    
+    .deep-features .nav-link img {
+      height: 20px;
+      margin-right: 10px;
+    }
+    
+    .deep-features-header {
+      display: flex;
+      
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .deep-features-header h2 {
+      font-size: 3.0rem;
+      color: #9e0396;
+      margin-bottom: 20px;
+    }
+    
+    .deep-features-header p {
+      font-size: 1.5rem;
+    }
+  
+    .deep-features-items {
+      margin-top: 5px;
+    }
+  
+    
+    
+    .deep-features-item p {
+      margin-bottom: 0;
+    }
+    
+    .deep-features-card {
+      background-color: black;
+      color: white;
+      min-height: 100%;
+      min-width: 100%;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s ease-in-out;
+      align-items: center;
+    }
+    .deep-features-card-col {
+      transition: transform 0.2s ease-in-out;
+    }
+    /* Add hover effect for the card */
+    .deep-features-card-col:hover {
+      transform: scale(1.05); /* Increase size on hover */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow on hover */
+    }
+    
+    .deep-features-card-body {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+    
+
+    .deep-features-card-button-div{
+      min-width: 100%;
+      min-height: 60px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .deep-features-card-button-link{
+      min-width: 60%;
+      min-height: 50px;
+      margin-bottom: 10px;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+  
+
+    .deep-features-card-button {
+      min-width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 0;
+      background: linear-gradient(60deg, #9e0396, #70026a, #5b029b, #7e42f5, #117f9b, #008eb5);
+      border-radius: calc(2 * var(--borderWidth));
+      animation: animatedgradient 2s ease alternate infinite;
+      background-size: 300% 300%;
+      margin-top: auto;
+    }
+    
+    .deep-features-card-img {
+      width: 50%;
+      height: 20%;
+      object-fit: contain;
+    }
+
+    .deep-features-card-title {
+      display: flex; /* or flex */
+      justify-content: center; /* if display is flex */
+      align-items: center; /* if display is flex */
+      min-height: 30%;
+      min-width: 100%;
+      font-size: '1.5rem';
+      justify-content: center;
+      margin: auto;
+      vertical-align: middle;
+      
+    }
+    .deep-features-card-description {
+      margin: auto;
+      position: relative;
+      font-size: 0.8rem;
+      display: flex;
+      align-items: center;
+      vertical-align: middle;
+      justify-content: center;
+      text-align:center;
+    }
+    

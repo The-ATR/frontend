@@ -1,0 +1,31 @@
+/* Styles for the main item container */
+.sidenav-item-s {
+    display: flex;
+    flex-direction: column; /* This should be column to stack children vertically */
+    width: 100%; /* Ensure it spans the full width of the sidebar */
+  }
+  
+  /* Styles for the clickable part of the main item */
+  .sidenav-item-s-main {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 20px;
+    
+  }
+  
+  /* Styles for the main item icon */
+  .sidenav-item-s-icon {
+    margin-right: 10px; /* Adjust spacing as needed */
+  }
+  
+  /* Styles for the main item title */
+  .sidenav-item-s-title {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none; /* Removes underline from links */
+    color: white;
+    font-size: 1em;
+  }
+  

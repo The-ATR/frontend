@@ -1,0 +1,24 @@
+steps:
+  # Build the container image with the 'latest' tag
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/theatr_frontend/theatr-frontend:latest', '.']
+  
+  # Deploy the image to Cloud Run
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    entrypoint: gcloud
+    args: 
+      - 'run'
+      - 'deploy'
+      - 'theatr-frontend'
+      - '--image'
+      - 'gcr.io/theatr_frontend/theatr-frontend:latest'
+      - '--platform'
+      - 'managed'
+      - '--region'
+      - 'us-central1'
+      - '--allow-unauthenticated'
+
+images:
+  - 'gcr.io/theatr_frontend/theatr-frontend:latest'
+
+  

@@ -1,0 +1,68 @@
+.testimonials-container {
+  width: 100%;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+
+.testimonial {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.testimonial-div{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease; /* Add a transition effect to the transform property */
+}
+
+.testimonial-div:hover{
+  transform: scale(1.05); /* Slightly enlarge the card */
+}
+
+
+.testimonial-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.testimonial-title {
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-top: 10px;
+}
+
+.testimonial-rating {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.star {
+  color: #9e0396;
+}
+
+.testimonial-description {
+  font-size: 1rem;
+}
+
+.slick-slide {
+  padding-right: 1rem; /* Adjust the value as needed */
+  padding-left: 1rem;
+}
+
+.slick-prev:before, .slick-next:before {
+  color: #9e0396; /* Your desired color */
+}
+
+.slick-slide .testimonial {
+  transition: transform 0.3s ease-in-out; /* Smooth transition for scaling */
+}
+
